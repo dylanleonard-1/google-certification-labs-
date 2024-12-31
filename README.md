@@ -201,7 +201,23 @@ Server logs confirm the overload scenario, indicating the server's inability to 
 This type of incident report and analysis is crucial for several reasons:
 
 *   **Incident Response:** Documents the details of the security incident for effective response, understanding the scope, impact, and recovery steps.
-*   Root Cause Analysis
+*   **Root Cause Analysis:** Identifies the root cause (SYN flood), enabling implementation of appropriate mitigation measures.
+*   **Technical Understanding:** Demonstrates understanding of the TCP three-way handshake and SYN flood mechanics.
+*   **Communication:** Provides a clear explanation for both technical and non-technical stakeholders.
+*   **Evidence and Forensics:** Serves as a record of the incident for potential forensic investigations.
+*   **Security Posture Improvement:** Enables identification of security weaknesses and implementation of preventative measures.
+
+**Demonstrated Skills:**
+
+By creating this report, the following skills were demonstrated:
+
+*   **Incident Identification:** Ability to identify a network interruption as a DoS attack.
+*   **Technical Analysis:** Understanding of the TCP three-way handshake and SYN flood attack.
+*   **Log Analysis:** Utilizing server logs to support conclusions.
+*   **Communication Skills:** Clear and understandable presentation of technical information.
+*   **Problem-Solving:** Contributing to incident response by identifying the root cause.
+
+In summary, this Cybersecurity Incident Report showcases the ability to analyze security incidents, understand technical details, and communicate findings effectively, a valuable skill for any cybersecurity professional.
 
   </details>
 
