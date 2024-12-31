@@ -200,8 +200,8 @@ Server logs confirm the overload scenario, indicating the server's inability to 
 
 This type of incident report and analysis is crucial for several reasons:
 
-*   **Incident Response:** Documents the details of the security incident for effective response, understanding the scope, impact, and recovery steps.
-*   **Root Cause Analysis
+*   ** Incident Response:** Documents the details of the security incident for effective response, understanding the scope, impact, and recovery steps.
+*   ** Root Cause Analysis
 
   </details>
 
