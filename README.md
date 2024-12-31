@@ -72,7 +72,7 @@ In conclusion, this project demonstrates a practical application of Python for a
 [View my lab(PDF)](https://docs.google.com/document/d/1XC9zey30RKyeclrGuJmXxkIaQszEcdrpLvxTR9Cj9gg/edit?tab=t.0)
 
 
-#Apply filters to SQL queries
+#  Apply filters to SQL queries
 
 See Details
 <details>
