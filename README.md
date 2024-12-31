@@ -26,6 +26,10 @@ In summary, this PASTA worksheet demonstrates a valuable methodology for identif
 
 ## Python Algorithm for File Updates (IP Address Filtering)
 
+see details
+<details>
+  <summary>Click to expand</summary>
+
 This project describes the development of a Python algorithm designed to filter IP addresses from an allow list file. The algorithm efficiently identifies and removes IP addresses that are no longer authorized to access restricted content.
 
 **Key Steps of the Algorithm:**
@@ -62,5 +66,7 @@ This algorithm is crucial for several reasons, particularly in a cybersecurity c
 *   **Functions:** Algorithms can be encapsulated within functions for reusability and modularity.
 
 In conclusion, this project demonstrates a practical application of Python for automating a key security task. It emphasizes the importance of efficient and accurate allow list management for robust access control and a strengthened security posture.
+
+</details>
 
 [View my lab(PDF)](https://docs.google.com/document/d/1XC9zey30RKyeclrGuJmXxkIaQszEcdrpLvxTR9Cj9gg/edit?tab=t.0)
