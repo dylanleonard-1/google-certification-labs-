@@ -5,6 +5,7 @@
 
 <details>
   <summary>Click to expand</summary>
+  
   Content that will be hidden until the summary is clicked.
 
 
