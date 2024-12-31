@@ -70,3 +70,72 @@ In conclusion, this project demonstrates a practical application of Python for a
 </details>
 
 [View my lab(PDF)](https://docs.google.com/document/d/1XC9zey30RKyeclrGuJmXxkIaQszEcdrpLvxTR9Cj9gg/edit?tab=t.0)
+
+
+#Apply filters to SQL queries
+
+See Details
+<details>
+  <summary>Click to expand</summary>
+
+  ## Applying Filters to SQL Queries for Cybersecurity Analysis
+
+This project demonstrates proficiency in constructing and executing SQL queries to filter and extract specific data, with a focus on applications relevant to cybersecurity analysis. It showcases the use of various SQL clauses, operators, and functions to retrieve targeted information based on diverse criteria.
+
+**Key Operations Demonstrated:**
+
+*   **Retrieving After-Hours Failed Login Attempts:** This demonstrates time-based filtering (using `WHERE` clauses with time comparison operators like `>`, `<`, and `=`) to pinpoint suspicious login activity outside of normal business hours. Example:
+
+    ```sql
+    SELECT * FROM LoginAttempts WHERE LoginTime < '18:00:00' AND LoginStatus = 'Failed';
+    ```
+
+*   **Retrieving Login Attempts on Specific Dates:** This showcases filtering based on date ranges (using `BETWEEN` or comparison operators with dates) to isolate login attempts within a specific timeframe, crucial for incident investigation. Example:
+
+    ```sql
+    SELECT * FROM LoginAttempts WHERE LoginTime BETWEEN '2024-03-10' AND '2024-03-12';
+    ```
+
+*   **Retrieving Login Attempts Outside of a Specific Location (e.g., Mexico):** This demonstrates using the `NOT` operator and wildcard characters (e.g., `%`) in `WHERE` clauses to exclude data based on location or other string patterns. Example:
+
+    ```sql
+    SELECT * FROM LoginAttempts WHERE NOT Location LIKE 'MEX%';
+    ```
+
+*   **Retrieving Employees in Specific Departments (e.g., Marketing, Finance, Sales, excluding IT):** This showcases filtering based on categorical data (department names) using `WHERE` clauses with `=`, `OR`, and `NOT` operators. Examples:
+
+    ```sql
+    -- Marketing Employees
+    SELECT * FROM Employees WHERE Department = 'Marketing';
+
+    -- Finance OR Sales Employees
+    SELECT * FROM Employees WHERE Department = 'Finance' OR Department = 'Sales';
+
+    -- Employees NOT in IT
+    SELECT * FROM Employees WHERE NOT Department = 'IT';
+    ```
+
+**Importance of SQL Filtering for Cybersecurity:**
+
+SQL filtering is a critical skill for cybersecurity analysts due to its applications in:
+
+*   **Incident Investigation:** Quickly narrow down large log datasets based on specific criteria (timestamps, user IDs, IP addresses, event types) to identify relevant events.
+*   **Threat Hunting:** Proactively search for indicators of compromise (IOCs) within system logs and other data sources using pattern matching and filtering.
+*   **Security Auditing:** Audit database configurations and access controls to identify users with excessive privileges or misconfigurations.
+*   **Compliance Reporting:** Extract necessary data for compliance reports (e.g., PCI-DSS, HIPAA) by filtering based on regulatory requirements.
+*   **Data Analysis and Trend Identification:** Identify trends and patterns in security events to predict future attacks or uncover systemic weaknesses.
+*   **Efficient Data Extraction:** Extract specific data efficiently, avoiding manual review of extensive datasets.
+
+**Summary of SQL Concepts Demonstrated:**
+
+This project highlights the importance of logical operators (`NOT`, `AND`, `OR`), comparison operators (`=`, `>`, `<`, `BETWEEN`, `LIKE`), and the `WHERE` clause in SQL. These elements are essential for creating precise filters and extracting relevant information. The ability to filter data based on various parameters is crucial for:
+
+*   Conducting thorough incident investigations.
+*   Identifying emerging threats.
+*   Developing data-driven risk mitigation strategies.
+
+This project demonstrates the practical application of SQL skills in a cybersecurity context, showing how effective data filtering provides valuable insights for security analysis and informed decision-making.
+
+</details>
+
+[View my lab(PDF)](https://docs.google.com/document/d/1QHnoZ4T-RV0SVVCC5t68zwe2wRakQqm90U_CLnSMiAU/edit?usp=sharing)
