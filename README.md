@@ -223,5 +223,74 @@ In summary, this Cybersecurity Incident Report showcases the ability to analyze 
 
 [View my lab(PDF)](https://docs.google.com/document/d/1izEafzURaE2SY-eUa5Yzr3FOUBKAmqhVIkI8h1Q_KGw/edit?usp=sharing)
 
+# File permissions in Linux
+
+See Details
+<details>
+  <summary>Click to expand</summary>
+
+## Linux File Permissions Management
+
+This project demonstrates proficiency in managing file permissions in Linux using the command-line interface. It covers listing file details (including permissions) with `ls` and `ls -l`, and modifying permissions using `chmod` with the `+` and `-` operators. The project also addresses handling hidden files and directory permissions.
+
+**Key Operations Demonstrated:**
+
+*   **Check File and Directory Details:** Demonstrates using `ls` to list files and `ls -l` to display detailed file information, including permissions, ownership, file size, and modification time. Example:
+
+    ```bash
+    ls
+    ls -l
+    ```
+
+*   **Describe the Permissions String:** Explains the meaning of the permission string (e.g., `-rw-rw-r--`). Breaks down the string into user (owner), group, and others, and explains `r` (read), `w` (write), and `x` (execute). Example:
+
+    `-rw-rw-r--` breaks down as: `- (file type) rw- (user) rw- (group) r-- (others)`
+
+*   **Change File Permissions:** Demonstrates using `chmod` with `+` and `-` to grant and revoke permissions. Example:
+
+    ```bash
+    chmod o-w filename  # Removes write permission for others
+    chmod u+x script.sh # Adds execute permission for the user
+    chmod 755 filename # Sets permissions to rwxr-xr-x (using octal notation)
+    ```
+
+*   **Change File Permissions on a Hidden File:** Shows how to view and modify permissions for hidden files using `ls -la` and `chmod`. Example:
+
+    ```bash
+    ls -la
+    chmod g+r .hiddenfile # Adds read permission for the group
+    ```
+
+*   **Change Directory Permissions:** Demonstrates changing permissions for directories, focusing on the execute permission (`x`), which is necessary for accessing the contents of a directory. Example:
+
+    ```bash
+    chmod u+x directoryname # Adds execute permission for the user to the directory
+    chmod 700 directoryname # Sets permissions to rwx------ (only user has full access)
+    ```
+
+**Importance of Understanding File Permissions in Linux:**
+
+Understanding and managing file permissions in Linux is crucial for:
+
+*   **Data Confidentiality:** Controls who can read file content.
+*   **Data Integrity:** Prevents unauthorized file modifications.
+*   **System Security:** Prevents unauthorized program execution.
+*   **Principle of Least Privilege:** Enforces granting only necessary permissions.
+*   **Incident Response and Forensics:** Aids in understanding access patterns during investigations.
+*   **Compliance:** Meets security standards and regulatory requirements.
+
+**Demonstrated Skills:**
+
+*   Using `ls` and `ls -l` to view file information.
+*   Interpreting permission strings.
+*   Using `chmod` (including octal notation) to modify permissions.
+*   Managing hidden file permissions.
+*   Managing directory permissions.
+
+In summary, this project highlights practical skills in Linux file system management, focusing on the critical security aspect of file permissions. This is a fundamental skill for any system administrator, cybersecurity analyst, or Linux user.
+
+</details>
+
+[View my lab(PDF)](https://docs.google.com/document/d/1MHv1Mfv_P7n_H7wXdYg3yPHlUUjXhja-ZhHBQ5cHR_U/edit?usp=sharing)
 
 
