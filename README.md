@@ -170,3 +170,42 @@ These checklists are not merely a formality; they are essential tools for managi
 [View my lab(PDF)](https://docs.google.com/document/d/1baK64ZYJ7_WV1yfbBhWFdvP-WzCMtfJocGtETIhjRMk/edit?usp=sharing)
 
 
+# Cybersecurity incident report
+
+See Details
+<details>
+  <summary>Click to expand</summary>
+
+## Cybersecurity Incident Report: Network Interruption Analysis
+
+This report documents an analysis of a network interruption, identifying it as a Denial-of-Service (DoS) attack, specifically a SYN flood. The report explains the technical details of the attack and its impact on the website's functionality.
+
+**Section 1: Identify the Type of Attack**
+
+The observed errors, timeout messages, and the server's unresponsiveness after being overloaded with SYN packets strongly suggest a DoS attack. The specific type of DoS attack is identified as a SYN flood.
+
+**Section 2: Explain How the Attack is Causing the Website to Malfunction**
+
+The normal TCP connection establishment process involves a three-way handshake:
+
+1.  **SYN:** The client sends a SYN packet to the server to initiate a connection.
+2.  **SYN-ACK:** The server responds with a SYN-ACK packet, acknowledging the request and allocating resources for the connection.
+3.  **ACK:** The client sends an ACK packet back to the server to complete the connection establishment.
+
+A SYN flood attack disrupts this process by overwhelming the server with a large volume of SYN packets. The server responds to each SYN with a SYN-ACK and allocates resources, but it never receives the final ACK from the attacker. This leaves the server with a large number of half-open connections, consuming its resources and preventing it from responding to legitimate connection requests. As a result, legitimate users experience connection timeouts.
+
+Server logs confirm the overload scenario, indicating the server's inability to process legitimate SYN requests and establish new connections, leading to connection timeout messages for visitors.
+
+**Importance of This Report and the Analysis:**
+
+This type of incident report and analysis is crucial for several reasons:
+
+*   **Incident Response:** Documents the details of the security incident for effective response, understanding the scope, impact, and recovery steps.
+*   **Root Cause Analysis
+
+  </details>
+
+[View my lab(PDF)](https://docs.google.com/document/d/1izEafzURaE2SY-eUa5Yzr3FOUBKAmqhVIkI8h1Q_KGw/edit?usp=sharing)
+
+
+
