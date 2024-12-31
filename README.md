@@ -3,11 +3,10 @@
 
 ## Importance of the PASTA Methodology
 
+*  **see details
 <details>
   <summary>Click to expand</summary>
   
-  Content that will be hidden until the summary is clicked.
-
 
 The PASTA (Process for Attack Simulation and Threat Analysis) methodology, as demonstrated in this worksheet, is important for several reasons:
 
