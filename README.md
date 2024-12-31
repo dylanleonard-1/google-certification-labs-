@@ -3,7 +3,7 @@
 
 ## Importance of the PASTA Methodology
 
-*  **see details
+see details
 <details>
   <summary>Click to expand</summary>
   
