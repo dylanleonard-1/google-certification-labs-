@@ -1,10 +1,12 @@
-<details>
-  <summary>Click to expand</summary>
-  Content that will be hidden until the summary is clicked.
 
 #  PASTA worksheet exemplar 
 
 ## Importance of the PASTA Methodology
+
+<details>
+  <summary>Click to expand</summary>
+  Content that will be hidden until the summary is clicked.
+
 
 The PASTA (Process for Attack Simulation and Threat Analysis) methodology, as demonstrated in this worksheet, is important for several reasons:
 
