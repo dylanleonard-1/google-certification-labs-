@@ -1,5 +1,4 @@
-#          Google Labs    ![image](https://github.com/user-attachments/assets/2867cdcc-c5e5-4957-8cf7-7acfcddb2360)
-
+#          Google Labs   
 #  PASTA worksheet exemplar 
 
 ### Importance of the PASTA Methodology
