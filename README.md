@@ -3,7 +3,7 @@
 
 ### Importance of the PASTA Methodology
 
-see details
+See Details
 <details>
   <summary>Click to expand</summary>
   
@@ -26,7 +26,7 @@ In summary, this PASTA worksheet demonstrates a valuable methodology for identif
 
 ## Python Algorithm for File Updates (IP Address Filtering)
 
-see details
+See Details
 <details>
   <summary>Click to expand</summary>
 
