@@ -15,9 +15,6 @@ In summary, this PASTA worksheet demonstrates a valuable methodology for identif
 
 [View my lab(PDF)](https://docs.google.com/document/d/1RdqmR63vrr6zQLHcyatlzZdnCD9LuEcRCsVzEAB6CJU/edit?usp=sharing)
 
-#  Algorithm for file updates in Python
-
-## Importance of knowing Algorithm for file updates in Python
 
 ## Python Algorithm for File Updates (IP Address Filtering)
 
