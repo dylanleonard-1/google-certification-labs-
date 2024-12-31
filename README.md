@@ -1,3 +1,7 @@
+<details>
+  <summary>Click to expand</summary>
+  Content that will be hidden until the summary is clicked.
+
 #  PASTA worksheet exemplar 
 
 ## Importance of the PASTA Methodology
@@ -12,6 +16,8 @@ The PASTA (Process for Attack Simulation and Threat Analysis) methodology, as de
 *   **Comprehensive Coverage:** By covering all stages from defining objectives to implementing controls, it ensures that security is considered throughout the application's lifecycle.
 
 In summary, this PASTA worksheet demonstrates a valuable methodology for identifying, analyzing, and mitigating security risks in applications. It's a crucial tool for building secure systems and protecting sensitive information.
+
+</details>
 
 [View my lab(PDF)](https://docs.google.com/document/d/1RdqmR63vrr6zQLHcyatlzZdnCD9LuEcRCsVzEAB6CJU/edit?usp=sharing)
 
