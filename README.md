@@ -293,4 +293,170 @@ In summary, this project highlights practical skills in Linux file system manage
 
 [View my lab(PDF)](https://docs.google.com/document/d/1MHv1Mfv_P7n_H7wXdYg3yPHlUUjXhja-ZhHBQ5cHR_U/edit?usp=sharing)
 
+# incident handler's journal 
+
+See Details
+<details>
+  <summary>Click to expand</summary>
+
+## Incident Handler's Journal
+
+This journal documents learning experiences and reflections on various cybersecurity concepts and tools, logging activities related to incident response, network analysis, and malware analysis.
+
+**Date: July 23, 2024**
+
+**Entry #1: Documenting a Cybersecurity Incident**
+
+**Description:** Documenting a cybersecurity incident involving ransomware.
+
+*   **Detection and Analysis:** The organization detected the ransomware incident and contacted external organizations for technical assistance.
+*   **Containment, Eradication, and Recovery:** The company shut down their computer systems as a containment measure and sought external assistance for eradication and recovery.
+
+**Tool(s) used:** None
+
+**The 5 W's:**
+
+*   **Who:** An organized group of unethical hackers.
+*   **What:** A ransomware security incident.
+*   **Where:** A health care company.
+*   **When:** Tuesday, 9:00 a.m.
+*   **Why:** A phishing attack allowed attackers to access systems, deploy ransomware, and demand a ransom (financial motivation).
+
+**Additional notes:**
+
+*   How could the health care company prevent similar incidents?
+*   Should the company pay the ransom?
+
+---
+
+**Date: July 25, 2024**
+
+**Entry #2: Analyzing a Packet Capture File**
+
+**Description:** Analyzing a packet capture file.
+
+**Tool(s) used:** Wireshark (network protocol analyzer with a GUI).
+
+**The 5 W's:** N/A
+
+**Additional notes:** First experience with Wireshark; initial impression of the interface being overwhelming but powerful.
+
+---
+
+**Date: July 25, 2024**
+
+**Entry #3: Capturing My First Packet**
+
+**Description:** Capturing network traffic.
+
+**Tool(s) used:** `tcpdump` (command-line network protocol analyzer).
+
+**The 5 W's:** N/A
+
+**Additional notes:** Challenges using the command-line interface for capturing and filtering; learned the importance of careful instruction following.
+
+---
+
+**Date: July 27, 2024**
+
+**Entry #4: Investigate a Suspicious File Hash**
+
+**Description:** Investigating a suspicious file hash.
+
+**Tool(s) used:** VirusTotal (malware analysis tool).
+
+**Incident Phase:** Detection and Analysis (SOC scenario).
+
+**The 5 W's:**
+
+*   **Who:** Unknown malicious actor.
+*   **What:** Malicious file attachment (SHA-256 hash: `54e6ea47eb04634d3e87fd7787e2136ccfbcc80ade34f246a12cf93bab527f6b`).
+*   **Where:** An employee's computer at a financial services company.
+*   **When:** 1:20 p.m. (alert from IDS).
+*   **Why:** Employee downloaded and executed a malicious email attachment.
+
+**Additional notes:**
+
+*   How can this incident be prevented in the future?
+*   Should security awareness training be improved?
+
+---
+
+**Reflections/Notes:**
+
+*   **Challenges:** `tcpdump` was challenging due to unfamiliarity with the command-line interface; learned the importance of careful instruction following.
+*   **Changed Understanding of Incident Detection and Response:** Developed a deeper understanding of the incident lifecycle, plans, processes, people, and tools involved.
+*   **Most Enjoyed Tool/Concept:** Enjoyed learning about network traffic analysis and using network protocol analyzer tools.
+
+This journal demonstrates an understanding of incident response, tool proficiency (Wireshark, `tcpdump`, VirusTotal), analytical skills, self-reflection, and documentation skills.
+
+</details>
+
+[View my lab(PDF)](https://docs.google.com/document/d/1lS5JGUSRnaYukYXJPpkqVujvtgSezwHIaiz_akqfGtA/edit?usp=sharing)
+
+# Security incident report template
+
+See Details
+<details>
+  <summary>Click to expand</summary>
+
+## Security Incident Report: Website Compromise and User Redirection
+
+This report details a security incident involving a website compromise and user redirection for malicious purposes.
+
+**Section 1: Network Protocol Involved**
+
+The primary protocol involved in this incident is **HTTP (Hypertext Transfer Protocol)**. HTTP is used for communication between web browsers and servers. The compromised website initially used HTTP to deliver legitimate content. However, after the malicious file download, the attacker manipulated user traffic through HTTP requests to a different, malicious website. `tcpdump` logs confirmed HTTP traffic interacting with the requests, particularly the transfer of the malicious file at the application layer.
+
+**Section 2: Incident Documentation**
+
+**2.1 Initial Reports**
+
+Several customers reported experiencing issues after visiting `yummyrecipesforme.com`, including:
+
+*   Prompted to download a file for new recipes.
+*   Slow computer performance after the download.
+*   The website owner's account being locked out.
+
+**2.2 Investigation**
+
+*   A cybersecurity analyst used an isolated environment to simulate a user's experience.
+*   The analyst downloaded the offered file and observed a redirection to a fake website, `greatrecipesforme.com`.
+*   Initial network traffic analysis showed normal communication with the legitimate server (`yummyrecipesforme.com`).
+*   Post-download, traffic was redirected to the fake website (`greatrecipesforme.com`).
+
+**2.3 Root Cause Analysis**
+
+The investigation revealed:
+
+*   Attackers compromised `yummyrecipesforme.com` by tampering with its code.
+*   The altered code displayed a fake browser update prompt, which was actually a malicious file.
+*   The website owner was likely locked out via a brute-force attack, granting the attacker control to manipulate the website.
+*   The downloaded file rerouted user connections, potentially compromising visitors' computers.
+
+**Section 3: Recommended Remediation for Brute-Force Attacks**
+
+To prevent future brute-force attacks, the following measures are recommended:
+
+*   **Enforce Password Complexity:** Require strong passwords (e.g., minimum 15 characters, mixed case, numbers, symbols).
+*   **Disallow Password Reuse:** Implement a policy preventing users from reusing previous passwords.
+*   **Enable Two-Factor Authentication (2FA):** Implement 2FA using one-time passcodes (OTPs) sent to users' devices.
+
+**Importance of Security Incident Reports:**
+
+Security incident reports are essential for:
+
+*   **Understanding Attack Scope:** Documenting details helps understand attack vectors, affected systems, and user impact.
+*   **Facilitating Remediation:** Provides a basis for implementing corrective actions and preventing recurrence.
+*   **Compliance and Regulations:** Supports compliance with reporting requirements.
+*   **Communication and Collaboration:** Facilitates communication with stakeholders.
+*   **Learning and Improvement:** Provides insights for improving future security posture.
+
+**Note on `tcpdump` Traffic Log:**
+
+`tcpdump` was used to capture network traffic. The logs likely showed the initial legitimate HTTP requests followed by the redirection to the malicious domain after the file download. Including relevant log excerpts would further strengthen the report.
+
+</details>
+
+[View my lab(PDF)](https://docs.google.com/document/d/1eQEJ45C15MO0S_jvJWQj4oHtcSL8PKXSJZ4FIMzBHDc/edit?usp=sharing)
 
