@@ -460,3 +460,138 @@ Security incident reports are essential for:
 
 [View my lab(PDF)](https://docs.google.com/document/d/1eQEJ45C15MO0S_jvJWQj4oHtcSL8PKXSJZ4FIMzBHDc/edit?usp=sharing)
 
+
+# Security risk assessment report
+
+See Details
+<details>
+  <summary>Click to expand</summary>
+## Security Risk Assessment Report: Hardening Recommendations
+
+This report focuses on recommending hardening tools and methods to mitigate identified vulnerabilities. It specifically addresses multi-factor authentication (MFA), strong password policies, and regular firewall maintenance.
+
+**Part 1: Selected Hardening Tools and Methods**
+
+The following hardening tools and methods are recommended:
+
+1.  Implementing Multi-Factor Authentication (MFA)
+2.  Setting and enforcing strong password policies
+3.  Performing regular firewall maintenance
+
+**Part 2: Explanation of Recommendations**
+
+### Implementing Multi-Factor Authentication (MFA) and Password Policies
+
+Enforcing MFA significantly strengthens security by adding an extra layer of verification beyond a password. This makes brute-force attacks and similar methods much less effective. MFA also discourages password sharing, as the recipient of a shared password would not have the additional authentication factor.
+
+Creating and enforcing strong password policies is another crucial step. These policies can include:
+
+*   Account lockout after failed login attempts.
+*   Increased password complexity (longer passwords, mixed case, numbers, symbols).
+*   Mandating frequent password updates.
+*   Disallowing password reuse.
+
+### Firewall Maintenance for Enhanced Security
+
+Regular firewall maintenance is vital for network security. Network administrators should:
+
+*   Ensure firewall rules are up-to-date and reflect the latest security standards for allowed and denied traffic.
+*   Explicitly block any suspicious traffic sources.
+*   Review and update firewall rules after security incidents, especially those involving unauthorized network access or DoS/DDoS attacks.
+
+**Importance of These Recommendations:**
+
+These recommendations are important because they:
+
+*   **Promote Proactive Security:** Prevent attacks before they occur.
+*   **Mitigate Common Attacks:** Address brute-force, credential stuffing, phishing, and network-based attacks.
+*   **Implement Layered Security (Defense in Depth):** Create multiple layers of protection.
+*   **Reduce Attack Surface:** Minimize opportunities for attackers to exploit vulnerabilities.
+*   **Improve Security Posture:** Enhance overall organizational security.
+*   **Support Compliance:** Help meet compliance requirements.
+
+**Demonstrated Skills:**
+
+This report demonstrates:
+
+*   Understanding of security hardening techniques.
+*   Knowledge of common attack vectors.
+*   Ability to recommend practical security solutions.
+*   Emphasis on proactive security.
+
+</details>
+
+[View my lab(PDF)](https://docs.google.com/document/d/1T2euW8WeszKdjXzt_k39BcpiFQviQKHno2v_YUfSy5U/edit?usp=sharing)
+
+# Vulnerability assessment report
+
+See Details
+<details>
+  <summary>Click to expand</summary>
+
+## Vulnerability Assessment Report
+
+**1st January 20XX**
+
+**System Description**
+
+The server hardware consists of a powerful CPU processor and 128GB of memory. It runs on the latest version of Linux operating system and hosts a MySQL database management system. It is configured with a stable network connection using IPv4 addresses and interacts with other servers on the network. Security measures include SSL/TLS encrypted connections.
+
+**Scope**
+
+The scope of this vulnerability assessment relates to the current access controls of the system. The assessment covers a period of three months, from June 20XX to August 20XX. NIST SP 800-30 Rev. 1 is used to guide the risk analysis of the information system.
+
+**Purpose**
+
+The database server likely stores critical business data. Securing this data is essential for maintaining business operations, protecting customer privacy, and complying with regulations. Server downtime could disrupt operations, lead to financial losses, and damage the company's reputation.
+
+**Risk Assessment**
+
+| Threat Source | Threat Event                           | Likelihood | Severity | Risk (Likelihood \* Severity) |
+|---------------|----------------------------------------|------------|----------|-----------------------------|
+| Hacker        | Obtain sensitive information via exfiltration | 3          | 3        | 9                           |
+| Employee      | Disrupt mission-critical operations       | 2          | 3        | 6                           |
+| Customer      | Alter/Delete critical information       | 1          | 3        | 3                           |
+
+**Approach**
+
+Risks were considered based on the business's data storage and management methods. The likelihood of threat occurrence and the impact of potential events were weighed against the risks to daily operational needs.
+
+**Remediation Strategy**
+
+The following remediation strategies are recommended:
+
+*   Implement authentication, authorization, and auditing mechanisms:
+    *   Strong passwords.
+    *   Role-based access controls.
+    *   Multi-factor authentication.
+*   Upgrade encryption from SSL to TLS.
+*   Implement IP allow-listing to restrict database access to corporate offices.
+
+**Importance of This Report and the Assessment**
+
+A Vulnerability Assessment Report is crucial for:
+
+*   **Proactive Risk Management:** Identifying vulnerabilities *before* exploitation.
+*   **Prioritization of Security Efforts:** Focusing on the most critical risks.
+*   **Informed Decision-Making:** Guiding security investments and resource allocation.
+*   **Compliance Support:** Meeting regulatory requirements.
+*   **Improved Security Posture:** Reducing the risk of security incidents.
+*   **Business Continuity:** Ensuring operational resilience.
+*   **Data Protection:** Maintaining customer trust and complying with privacy regulations.
+
+**Demonstrated Skills:**
+
+*   Understanding of system architecture.
+*   Application of risk assessment methodology.
+*   Knowledge of security controls.
+*   Compliance awareness (NIST SP 800-30 Rev. 1).
+*   Clear communication of technical information.
+
+</details>
+
+[View my lab(PDF)](https://docs.google.com/document/d/1pfsQZi4ebqkOImVn6A_54NcwL-Z8t9tsretqJ2848Po/edit?usp=sharing)
+
+
+
+  
